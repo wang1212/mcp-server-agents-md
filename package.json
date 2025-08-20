@@ -1,0 +1,20 @@
+{
+  "name": "mcp-server-agents-md",
+  "version": "0.0.0",
+  "description": "",
+  "homepage": "https://github.com/wang1212/mcp-server-agents-md#readme",
+  "bugs": {
+    "url": "https://github.com/wang1212/mcp-server-agents-md/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wang1212/mcp-server-agents-md.git"
+  },
+  "license": "MIT",
+  "author": "wang1212",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
