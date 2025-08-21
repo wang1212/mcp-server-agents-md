@@ -1,6 +1,6 @@
 {
   "name": "mcp-server-agents-md",
-  "version": "0.0.1-alpha.0",
+  "version": "0.0.1",
   "description": "A unified MCP server for managing agent definition Markdown files (rules, workflows, subagents, claude.md, cursorrule, windsurfrule etc). Write once, use everywhere.",
   "keywords": [
     "mcp",
