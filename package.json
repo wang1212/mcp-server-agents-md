@@ -1,7 +1,19 @@
 {
   "name": "mcp-server-agents-md",
-  "version": "0.0.0",
-  "description": "",
+  "version": "0.0.1-alpha.0",
+  "description": "A unified MCP server for managing agent definition Markdown files (rules, workflows, subagents, claude.md, cursorrule, windsurfrule etc). Write once, use everywhere.",
+  "keywords": [
+    "mcp",
+    "mcp server",
+    "agent",
+    "subagent",
+    "rules",
+    "workflows",
+    "markdown",
+    "cursor",
+    "windsurf",
+    "claude code"
+  ],
   "homepage": "https://github.com/wang1212/mcp-server-agents-md#readme",
   "bugs": {
     "url": "https://github.com/wang1212/mcp-server-agents-md/issues"
@@ -10,11 +22,47 @@
     "type": "git",
     "url": "git+https://github.com/wang1212/mcp-server-agents-md.git"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
   "license": "MIT",
-  "author": "wang1212",
+  "author": {
+    "name": "wang1212",
+    "url": "https://github.com/wang1212"
+  },
   "type": "module",
-  "main": "index.js",
+  "bin": {
+    "mcp-server-map": "./build/index.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "echo \"Error: no lint specified\"",
+    "test": "echo \"Error: no test specified\"",
+    "start": "npx @modelcontextprotocol/inspector node build/index.js",
+    "build": "node ./scripts/generate-tools.js && tsc && tsc-alias -p tsconfig.json",
+    "commit": "cz",
+    "prepare": "husky",
+    "prerelease": "npm run test",
+    "release": "standard-version",
+    "prebuild": "rm -rf build/*",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.3",
+    "gray-matter": "^4.0.3"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@modelcontextprotocol/inspector": "^0.16.5",
+    "@types/node": "^24.3.0",
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.5",
+    "prettier": "^3.6.2",
+    "standard-version": "^9.5.0",
+    "tsc-alias": "^1.8.16",
+    "typescript": "^5.9.2"
   }
 }
