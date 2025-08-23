@@ -9,6 +9,9 @@ A unified MCP server for managing agent definition Markdown files (rules, workfl
 > [!NOTE]
 > [AGENTS.md](https://agents.md/) published by OpenAI.
 
+> [!WARNING]
+> This is just a prototype project.
+
 ## Overview
 
 `mcp-server-agents-md` is a lightweight MCP server that centralizes all your agent definition files in Markdown format. It allows you to easily share and reuse rules, workflows, subagents, and other agent specs across different code agent platforms like Claude, Cursor, Windsurf, and more.

@@ -9,6 +9,9 @@
 > [!NOTE]
 > [AGENTS.md](https://agents.md/) 由 OpenAI 发布。
 
+> [!WARNING]
+> 这只是一个原型项目。
+
 ## 概述
 
 `mcp-server-agents-md` 是一个轻量级 MCP 服务器，它将你所有以 Markdown 编写的代理定义文件集中管理。它让你可以在 Claude、Cursor、Windsurf 等不同的代码代理平台之间，轻松共享与复用规则、工作流、子代理，以及其他代理规范。
